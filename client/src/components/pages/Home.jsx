@@ -1,9 +1,15 @@
+import React from 'react';
 
+import styles from './Home.module.css';
+
+import Cabecalho from '../layout/Cabecalho';
 
 function Home() {
     return(
-        <div>
-            <H1>Bem vindo ao Home</H1>
-        </div>
+        <>
+            <Cabecalho/>
+        </>
     )
 }
+
+export default Home;
