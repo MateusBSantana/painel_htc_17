@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styles from './TabelaAulas.module.css';
 import AbreviaData from './AbreviaData';
 import AbreviaAmbiente from './AbreviaAmbiente';
 import AbreviaNomeInstrutor from './AbreviaNomeInstrutor';
@@ -32,8 +33,8 @@ function TabelaAulas() {
     }
 
   return (
-    <div>
-      <table>
+    <div className={styles.aulas}>
+      <table className={styles.tabelaAulas}>
         <thead>
             <tr>
                 <th>Inicio</th>
