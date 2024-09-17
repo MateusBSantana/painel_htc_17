@@ -1,6 +1,6 @@
 function AbreviaUnidadeCurricular(props) {
     const unidade = props.unidade_curricular.split(' ');
-    if (unidade.lenght==1){
+    if (unidade.lenght===1){
         return[0]
     }
     unidade.splice(-2,2);

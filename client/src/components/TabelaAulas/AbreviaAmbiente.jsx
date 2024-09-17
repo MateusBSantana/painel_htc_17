@@ -1,4 +1,4 @@
-function AbreviaAmbiente(props) {
+/*function AbreviaAmbiente(props) {
     // Copia o array ambiente para evitar mutações do array original
     const ambiente = props.nomeAmbiente.split('-');
     
@@ -13,4 +13,4 @@ function AbreviaAmbiente(props) {
     )
 }
 
-export default AbreviaAmbiente;
+export default AbreviaAmbiente;*/
