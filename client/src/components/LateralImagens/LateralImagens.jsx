@@ -8,7 +8,7 @@ function LateralImagens() {
   useEffect(() => {
     setTimeout(() => {
       carregarImagens();
-    }, 3000);
+    }, 300);
   }, []);
 
   async function carregarImagens() {

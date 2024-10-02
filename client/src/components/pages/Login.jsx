@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from '../layout/Navbar';
 
 function Login() {
   return (
     <div>
-      <h1>Efetue Login</h1>
+      <Navbar/>
+      <h1 className='titulo'>Efetue Login</h1>
     </div>
   )
 }

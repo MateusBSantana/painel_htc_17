@@ -12,7 +12,7 @@ function TabelaAulas() {
   useEffect(() => {
     setTimeout(() => {
       carrearAulas();
-    }, 3000);
+    }, 300);
   }, []);
 
   async function carrearAulas() {
