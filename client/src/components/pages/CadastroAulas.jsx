@@ -10,18 +10,45 @@ function CadastroAulas() {
   const [instrutor, setInstrutor] = useState('');
   const [unidadeCurricular, setUnidadeCurricular] = useState('');
   const [ambiente, setAmbiente] = useState('');
-  const [infoAulas, setInfoAulas] = useState('');
 
-  async function CadastrarAula(e) {
+  //Função temporaria para cadastro de data
+  function formatDataHora(data,hora){
+    const dataHora=  `${data}T${hora}:00.000Z`;
+    return dataHora;
+  }
+
+  async function cadastrarAula(e) {
     e.preventDefault();
-    console.log(dataAula);
-    console.log(horaInicio);
-    console.log(horaFim);
-    console.log(turma);
-    console.log(instrutor);
-    console.log(unidadeCurricular);
-    console.log(ambiente);
-    console.log(infoAulas);
+    //Criando o objeto que será carregado para o POST da API
+    const  infoAula ={
+      data:formatDataHora(dataAula, '00:00'),
+      data_hora_inicio:formatDataHora(dataAula, horaInicio),
+      data_hora_fim:formatDataHora(dataAula, horaFim),
+      turma:turma,
+      instrutor:instrutor,
+      unidade_curricular:unidadeCurricular,
+      ambiente:ambiente,
+      chave:null
+    }
+
+    try {
+      //O POST é usado para inserir elementos na API
+      const resposta = await fetch('http://localhost:5000/aulas',{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json'
+        },body:JSON.stringify(infoAula)
+      });
+
+      if(!resposta.ok){
+        console.log('Erro ao criar aula');
+      } else {
+        alert('Aula cadastrada');
+      }
+
+    } catch (error) {
+      console.error('Erro no cadastro da aula ', error);
+    }
   }
 
   return (
@@ -29,7 +56,7 @@ function CadastroAulas() {
       <Navbar />
       <div className="container justify-content-center col-sm-12 col-md-6 col-lg-3">
         <h2 className="text-center">Adicionar Aula</h2>
-        <form onSubmit={CadastrarAula}>
+        <form onSubmit={cadastrarAula}>
           <label className="form-label">Data:</label>
           <input
             className="form-control"
