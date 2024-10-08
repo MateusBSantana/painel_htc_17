@@ -5,6 +5,7 @@ import AbreviaAmbiente from './AbreviaAmbiente';
 import AbreviaNomeInstrutor from './AbreviaNomeInstrutor';
 import AbreviaUnidadeCurricular from './AbreviaUnidadeCurricular';
 import Loading from '../layout/Loading';
+import { Link } from 'react-router-dom';
 
 function TabelaAulas({ tipo }) {
   const [aulas, setAulas] = useState([]);
@@ -33,6 +34,26 @@ function TabelaAulas({ tipo }) {
       //console.log(consulta);
     } catch (error) {
       console.log('Erro ao buscar aulas', error);
+    }
+  }
+
+  async function deletarAulas(id) {
+    try {
+      const resposta = await fetch(`http://localhost:5000/aulas/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (!resposta.ok) {
+        const error = await resposta.json();
+        throw new Error('Erro ao Deletar usuário', error);
+      } else {
+        alert('Aula deletada com sucesso!');
+        setAulas(aulas.filter((aula) => aula.id !== id));
+      }
+    } catch (error) {
+      throw new Error('Erro ao Deletar usuário', error);
     }
   }
 
@@ -66,12 +87,21 @@ function TabelaAulas({ tipo }) {
                   />
                 }
               </td>
-              <td>{aula.ambiente}</td>
-              {/* !-- <td>{<AbreviaAmbiente ambiente={aula.ambiente}/>}</td> */}
+              <td>{<AbreviaAmbiente nomeAmbiente={aula.ambiente} />}</td>
               {tipo === 'edit' && (
                 <td className="bg-light">
-                  <button className="btn btn-warning">Editar</button>
-                  <button className="btn btn-danger ms-2">Deletar</button>
+                  <Link
+                    to={`/editar_aula/${aula.id}`}
+                    className="btn btn-warning"
+                  >
+                    Editar
+                  </Link>
+                  <button
+                    className="btn btn-danger ms-2"
+                    onClick={() => deletarAulas(aula.id)}
+                  >
+                    Deletar
+                  </button>
                 </td>
               )}
             </tr>

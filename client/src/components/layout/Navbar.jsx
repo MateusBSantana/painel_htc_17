@@ -10,7 +10,7 @@ function Navbar() {
         <ul className='navbar-nav mx-auto'>
             <li className='nav-item'><Link className='nav-link' to="/">Início</Link></li>
             <li className='nav-item'><Link className='nav-link' to="/login">Login</Link></li>
-            <li className='nav-item'><Link className='nav-link' to="/cadastro_aulas">Cadastro de Aulas</Link></li>
+            <li className='nav-item'><Link className='nav-link' to="/cadastro_aulas">Gestao de Aulas</Link></li>
         </ul>
       </nav>
     </div>

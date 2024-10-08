@@ -34,25 +34,25 @@
       "chave": null
     },
     {
-      "id": "ec5d",
-      "data": "2024-10-03T00:00:00.000Z",
-      "data_hora_inicio": "2024-10-03T18:30:00.000Z",
-      "data_hora_fim": "2024-10-03T22:00:00.000Z",
-      "turma": "HTC-MEC-4",
-      "instrutor": "Ney",
-      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES DE MOTOCICLETAS (CH: 100.0000)",
-      "ambiente": "SALA-01",
-      "chave": null
-    },
-    {
-      "id": "99d0",
-      "data": "2024-10-03T00:00:00.000Z",
-      "data_hora_inicio": "2024-10-03T18:30:00.000Z",
-      "data_hora_fim": "2024-10-03T22:00:00.000Z",
+      "data": "T00:00:00.000Z",
+      "data_hora_inicio": "T:00.000Z",
+      "data_hora_fim": "T:00.000Z",
       "turma": "HTC-MEC-4",
       "instrutor": "Ney Schunk",
-      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES DE MOTOCICLETAS (CH: 100.0000)",
+      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES AUTOMOVEIS(CH: 100.0000)",
       "ambiente": "SALA-01",
+      "chave": null,
+      "id": "99d0"
+    },
+    {
+      "id": "5ea4",
+      "data": "2024-10-07T00:00:00.000Z",
+      "data_hora_inicio": "2024-10-07T18:30:00.000Z",
+      "data_hora_fim": "2024-10-07T22:00:00.000Z",
+      "turma": "HTC-DDS-3-17",
+      "instrutor": "Ramon de Holanda",
+      "unidade_curricular": "Sistemas de Informação",
+      "ambiente": "VTRA-3-LAB-5015",
       "chave": null
     }
   ],
