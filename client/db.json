@@ -1,18 +1,7 @@
 {
   "aulas": [
     {
-      "id": "1300",
-      "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:00:00.000Z",
-      "data_hora_fim": "2024-08-30T01:00:00.000Z",
-      "turma": "EMP-NBM-03",
-      "instrutor": "JOEL HERBERT BARBOSA SILVA",
-      "unidade_curricular": "NOÇÕES BÁSICAS PARA MAQUINISTAS (CH: 219.0000)",
-      "ambiente": "VTRIA-3-SALA-3004",
-      "chave": null
-    },
-    {
-      "id": "1280",
+      "id": "1281",
       "data": "2024-08-29T03:00:00.000Z",
       "data_hora_inicio": "2024-08-29T21:00:00.000Z",
       "data_hora_fim": "2024-08-30T01:00:00.000Z",
@@ -23,36 +12,25 @@
       "chave": null
     },
     {
-      "id": "1326",
+      "id": "1282",
       "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:30:00.000Z",
+      "data_hora_inicio": "2024-08-29T21:00:00.000Z",
       "data_hora_fim": "2024-08-30T01:00:00.000Z",
-      "turma": "HTC-MEC-4-92",
-      "instrutor": "AFONSO DE JESUS CORDEIRO",
-      "unidade_curricular": "DESENVOLVIMENTO DE SISTEMAS DE AUTOMAÇÃO MECÂNICA (CH: 100.0000)",
-      "ambiente": "VTRIA-3-LAB-3003",
+      "turma": "UMO-MBMM-03",
+      "instrutor": "THADEU VASCONCELOS DA SILVA GOMES",
+      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES DE MOTOCICLETAS (CH: 100.0000)",
+      "ambiente": "VTRIA-EXTER-EXTERNO",
       "chave": null
     },
     {
-      "data": "T00:00:00.000Z",
-      "data_hora_inicio": "T:00.000Z",
-      "data_hora_fim": "T:00.000Z",
-      "turma": "HTC-MEC-4",
-      "instrutor": "Ney Schunk",
-      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES AUTOMOVEIS(CH: 100.0000)",
-      "ambiente": "SALA-01",
-      "chave": null,
-      "id": "99d0"
-    },
-    {
-      "id": "5ea4",
-      "data": "2024-10-07T00:00:00.000Z",
-      "data_hora_inicio": "2024-10-07T18:30:00.000Z",
-      "data_hora_fim": "2024-10-07T22:00:00.000Z",
-      "turma": "HTC-DDS-3-17",
-      "instrutor": "Ramon de Holanda",
-      "unidade_curricular": "Sistemas de Informação",
-      "ambiente": "VTRA-3-LAB-5015",
+      "id": "1283",
+      "data": "2024-08-29T03:00:00.000Z",
+      "data_hora_inicio": "2024-08-29T21:00:00.000Z",
+      "data_hora_fim": "2024-08-30T01:00:00.000Z",
+      "turma": "UMO-MBMM-03",
+      "instrutor": "THADEU VASCONCELOS DA SILVA GOMES",
+      "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES DE MOTOCICLETAS (CH: 100.0000)",
+      "ambiente": "VTRIA-EXTER-EXTERNO",
       "chave": null
     }
   ],

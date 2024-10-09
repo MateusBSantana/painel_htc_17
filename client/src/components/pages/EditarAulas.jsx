@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../layout/Navbar';
-import { Link } from 'react-router-dom';
 import FormAula from '../FormAula/FormAula';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function EditarAulas() {
   const {id} = useParams();
@@ -20,7 +19,7 @@ function EditarAulas() {
       if (!resposta.ok) {
         console.log('Erro ao editar aula');
       } else {
-        alert('Aula Editada');
+       //alert('Aula Editada');
       }
     } catch (error) {
       console.error('Erro na edição da aula', error);
@@ -30,7 +29,7 @@ function EditarAulas() {
   return (
     <div>
       <Navbar />
-      <FormAula titulo='Editar Aula' txtBtn='Salvar' id={id} handleSubmit={editaula}/>
+      <FormAula titulo='Editar Aula' txtBtn='Salvar' id={id} tipo='editada' handleSubmit={editaula}/>
     </div>
   );
 }
