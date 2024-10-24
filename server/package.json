@@ -5,6 +5,7 @@
   "type": "module",
   "dependencies": {
     "aws-ssl-profiles": "^1.1.2",
+    "cors": "^2.8.5",
     "denque": "^2.1.0",
     "express": "^4.21.1",
     "generate-function": "^2.3.1",
