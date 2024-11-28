@@ -1,0 +1,27 @@
+DROP DATABASE IF EXISTS saep_banco; 
+CREATE DATABASE saep_banco;
+
+USE saep_banco;
+
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    primary key(id_usuario)
+);
+
+select * from usuarios;
+
+CREATE TABLE tarefas (
+    id_tarefa INT AUTO_INCREMENT,
+    descricao_tarefa TEXT,
+    nome_setor VARCHAR(255),
+    prioridade ENUM('Baixa', 'Média', 'Alta'),
+    data_cadastro DATE,
+    status_tarefa ENUM('A Fazer', 'Fazendo', 'Feita'),
+    id_usuario INT,
+    primary key(id_tarefa),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
+select * from tarefas;
